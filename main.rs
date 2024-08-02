@@ -13,10 +13,9 @@ fn main() {
         handle_connection(stream);
     }
 }
-// --snip--
 
 fn handle_connection(mut stream: TcpStream) {
-    // --snip--
+
     let buf_reader = BufReader::new(&mut stream);
     let request_line = buf_reader.lines().next().unwrap().unwrap();
 
