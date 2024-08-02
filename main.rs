@@ -5,7 +5,7 @@ use std::{
 };
 
 fn main() {
-    let listener = TcpListener::bind("0.0.0.0:8080").unwrap();
+    let listener = TcpListener::bind("0.0.0.0:0000").unwrap();//your ip and port
 
     for stream in listener.incoming() {
         let stream = stream.unwrap();
